@@ -76,7 +76,7 @@ class ViewBenchmarkGraphCommitModalTest < AcceptanceTest
 
       markers = page.all(".highcharts-markers.highcharts-tracker path")
       # Markers are found from right to left on the graph
-      markers[0].click
+      markers[0].double_click
       commit = benchmark_run3.initiator
 
       within_chart_modal_title do
